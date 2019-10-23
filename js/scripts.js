@@ -9,13 +9,14 @@ $(document).ready(function() {
     var nameInput = $("input#name").val();
     var addressInput = $("input#address").val();
     var item = $("#item").val();
-
-console.log(item);
+    var sel = document.getElementById("item");
+    console.log(sel.value);
 
     $(".name").append(nameInput);
     $(".address").append(addressInput);
 
     $("#receipt").show();
+    $("#output").text(sel);
 
     // $("#item").val()
 
